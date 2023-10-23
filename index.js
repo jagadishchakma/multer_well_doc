@@ -7,7 +7,7 @@ const upload_router = require("./routers/uploadRoute");
 
 //config app
 const app = express();
-const port = 8000;
+const PORT = process.env.PORT;
 
 
 
@@ -28,9 +28,6 @@ app.use("/upload",upload_router);
 
 
 
-
-
-
 // middleware for app configu
 app.use(not_found_middleware);
 app.use(error_middleware);
@@ -38,6 +35,6 @@ app.use(error_middleware);
 
 
 // server create
-app.listen(port,()=>{
-    console.log(`Surver running on port ${port}`);
+app.listen(PORT,()=>{
+    console.log(`Surver running on port ${PORT}`);
 });
