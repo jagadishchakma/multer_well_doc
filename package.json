@@ -4,7 +4,7 @@
   "description": "multer learn step by step",
   "main": "index.js",
   "scripts": {
-    "start": "node inex.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jagadish chakma",
