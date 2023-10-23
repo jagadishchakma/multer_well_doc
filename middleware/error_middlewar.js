@@ -1,7 +1,7 @@
 function error_middleware(err,req,res,next){
 
     if(err){
-        res.render("pages/error.ejs");
+        res.send(err.message);
     }else{
         res.send(new Error("Error Occured"));
     }
