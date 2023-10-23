@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single File Upload</title>
+</head>
+<body>
+    <div>
+        <h1><a href="/">Back To Home</a></h1>
+        <form action="http://localhost:8000/upload/single" method="post" enctype="multipart/form-data">
+            <input type="file" name="single_image" id="image">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
