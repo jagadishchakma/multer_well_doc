@@ -7,7 +7,7 @@ const upload_router = require("./routers/uploadRoute");
 
 //config app
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 
 
